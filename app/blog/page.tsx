@@ -6,9 +6,9 @@ interface Post {
   content: string;
 }
 const page = async () => {
-  const posts: Post[] = await fetch("http://my-space-jeremy/api/content").then(
-    (res) => res.json()
-  );
+  // const posts: Post[] = await fetch("http://my-space-jeremy/api/content").then(
+  //   (res) => res.json()
+  // );
 
   return (
     <div>
