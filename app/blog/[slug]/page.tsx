@@ -9,7 +9,7 @@ interface Props {
   };
 }
 const page = async ({ params: { slug } }: Props) => {
-  const posts: Post[] = await fetch("http://localhost:3000/api/content").then(
+  const posts: Post[] = await fetch("http://my-space-jeremy/api/content").then(
     (res) => res.json()
   );
   const post: Post | undefined = posts.find((post) => post.slug === slug);
