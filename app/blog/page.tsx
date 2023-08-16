@@ -6,18 +6,18 @@ interface Post {
   content: string;
 }
 const page = async () => {
-  // const posts: Post[] = await fetch("http://my-space-jeremy/api/content").then(
-  //   (res) => res.json()
-  // );
+  const posts: Post[] = await fetch("http://my-space-jeremy/api/content").then(
+    (res) => res.json()
+  );
 
   return (
     <div>
       <h1>Blogs</h1>
-      {/* {posts.map((post, key) => (
+      {posts.map((post, key) => (
         <div key={key}>
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };
