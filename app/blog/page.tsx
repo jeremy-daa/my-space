@@ -13,11 +13,11 @@ const page = async () => {
   return (
     <div>
       <h1>Blogs</h1>
-      {posts.map((post, key) => (
+      {/* {posts.map((post, key) => (
         <div key={key}>
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
